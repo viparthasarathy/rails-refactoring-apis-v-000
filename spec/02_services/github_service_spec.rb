@@ -64,6 +64,7 @@ describe 'GithubService' do
     end
   end
 
+
   describe '#create_repo' do
     it "sends the correct POST request" do
       stubbed = stub_request(:post, "https://api.github.com/user/repos").
@@ -75,4 +76,5 @@ describe 'GithubService' do
       expect(stubbed).to have_been_requested
     end
   end
+
 end
